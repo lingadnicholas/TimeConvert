@@ -31,7 +31,6 @@
     display: flex;
     position: relative;
     /*background: green;*/
-    overflow: hidden;
   }
   
   .clock::before, .clock::after {
@@ -40,7 +39,6 @@
     height: 3vh;
     background: linear-gradient(to top, transparent, black);
     position: absolute;
-    z-index: 2;
   }
   
   .clock::after {
@@ -69,17 +67,5 @@
     opacity: 0;
   }
   
-  .move {
-    animation: move linear 1s infinite;
-  }
-  
-  @keyframes move {
-    from {
-      transform: translateY(0vh);
-    }
-    to {
-      transform: translateY(-20vh);
-    }
-  }
   
   
